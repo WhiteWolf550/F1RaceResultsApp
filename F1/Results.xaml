@@ -1,0 +1,30 @@
+﻿<Page x:Class="F1.Results"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:F1"
+      mc:Ignorable="d" 
+      
+      Title="Results" Height="608.823" Width="800" Background="White">
+    <Border BorderBrush="#FFD10A0A" BorderThickness="2">
+        <ScrollViewer>
+            <Grid>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Width="779" Height="136">
+                    <Label Content="Results" HorizontalAlignment="Center" FontSize="40" VerticalAlignment="Top"></Label>
+                    <Label Name="ResultType" Content="Test" MinHeight="50" HorizontalContentAlignment="Center" FontSize="22" MinWidth="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="116"></Label>
+                </StackPanel>
+                <StackPanel Name="ResultPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Bottom" MinWidth="100" MinHeight="100">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Position" Width="100"></Label>
+                        <Label Content="Driver Number" Width="100"></Label>
+                        <Label Content="Driver Name" Width="100"></Label>
+                        <Label Content="Grid Start" Width="100"></Label>
+                        <Label Content="Points" Width="100"></Label>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>

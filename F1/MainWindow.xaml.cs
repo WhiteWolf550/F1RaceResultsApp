@@ -25,7 +25,8 @@ namespace F1 {
 
         public MainWindow() {
             InitializeComponent();
-            
+            mainFrame.Navigate(new Results(mainFrame));
+
         }
         
         

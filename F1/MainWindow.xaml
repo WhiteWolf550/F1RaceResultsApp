@@ -6,8 +6,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:F1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="608.823" Width="800">
+        Title="MainWindow" Height="641.225" Width="839.224">
+    <Window.Resources>
+        <Style x:Key="lblDesign" TargetType="Label">
+            <Setter Property="FontFamily" Value="fonts/moon.otf #moon"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="DarkGray"/>
+            <Setter Property="FontFamily" Value="Resources/F1.ttf #F1"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Frame Name="mainFrame" Source="Results.xaml"></Frame>
+        <Frame NavigationUIVisibility="Hidden" Name="mainFrame" Source="Results.xaml"></Frame>
     </Grid>
 </Window>

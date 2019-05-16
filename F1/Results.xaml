@@ -7,24 +7,39 @@
       xmlns:local="clr-namespace:F1"
       mc:Ignorable="d" 
       
-      Title="Results" Height="608.823" Width="800" Background="White">
-    <Border BorderBrush="#FFD10A0A" BorderThickness="2">
-        <ScrollViewer>
+      Title="Results" Height="588.342" Width="811.93" Background="White">
+    <Page.Resources>
+        <Style x:Key="lblDesign" TargetType="Label">
+            <Setter Property="FontFamily" Value="Resources/F1.otf #f1"/>
+        </Style>
+
+        <Style TargetType="Label">
+            
+            <Setter Property="FontFamily" Value="Resources/F1.ttf #F1"/>
+        </Style>
+    </Page.Resources>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
             <Grid>
-                <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Width="779" Height="136">
-                    <Label Content="Results" HorizontalAlignment="Center" FontSize="40" VerticalAlignment="Top"></Label>
-                    <Label Name="ResultType" Content="Test" MinHeight="50" HorizontalContentAlignment="Center" FontSize="22" MinWidth="100" HorizontalAlignment="Center" VerticalAlignment="Top" Width="116"></Label>
-                </StackPanel>
-                <StackPanel Name="ResultPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Bottom" MinWidth="100" MinHeight="100">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="Position" Width="100"></Label>
-                        <Label Content="Driver Number" Width="100"></Label>
-                        <Label Content="Driver Name" Width="100"></Label>
-                        <Label Content="Grid Start" Width="100"></Label>
-                        <Label Content="Points" Width="100"></Label>
+                <Button Name="Qualifying" Click="Qualifying_Click" Content="Latest Qualifying Results" Margin="10,10,594,546"></Button>
+                <StackPanel>
+                    <StackPanel Panel.ZIndex="2" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="5" Width="779" Height="107">
+                    <Label Style="{StaticResource lblDesign}" Content="Race Results" HorizontalAlignment="Center" FontSize="40" VerticalAlignment="Top"></Label>
+                    <Label  Name="ResultType" Content="Test" MinHeight="50" HorizontalContentAlignment="Center" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Top" MinWidth="100"></Label>
                     </StackPanel>
+                    <materialDesign:Card Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                        <StackPanel Name="ResultPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Bottom" MinWidth="100" MinHeight="100">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Width="10"></Label>
+                                <Label Content="Position" Width="100"></Label>
+                                <Label Content="Driver Number" Width="100"></Label>
+                                <Label Content="Driver Name" Width="100"></Label>
+                                <Label Content="Grid Start" Width="100"></Label>
+                                <Label Content="Points" Width="100"></Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </materialDesign:Card>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
-    </Border>
+    
 </Page>

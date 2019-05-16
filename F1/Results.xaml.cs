@@ -104,25 +104,25 @@ namespace F1 {
         public SolidColorBrush GetTeamColor(string team) {
             if (team == "Mercedes") {
                 return Brushes.Cyan;
-            }else if (team == "Ferrari") {
+            } else if (team == "Ferrari") {
                 return Brushes.Red;
-            }else if (team == "Red Bull") {
-                return Brushes.Blue;
-            }else if (team == "Haas F1 Team") {
-                return Brushes.Gold;
-            }else if (team == "McLaren") {
+            } else if (team == "Red Bull") {
+                return Brushes.DarkBlue;
+            } else if (team == "Haas F1 Team") {
+                return Brushes.Black;
+            } else if (team == "McLaren") {
                 return Brushes.Orange;
-            }else if (team == "Renault") {
+            } else if (team == "Renault") {
                 return Brushes.Yellow;
-            }else if (team == "Toro Rosso") {
-                return Brushes.LightBlue;
-            }else if (team == "Racing Point") {
+            } else if (team == "Toro Rosso") {
+                return Brushes.Blue;
+            } else if (team == "Racing Point") {
                 return Brushes.HotPink;
-            }else if (team == "Alfa Romeo") {
+            } else if (team == "Alfa Romeo") {
                 return Brushes.DarkRed;
-            }else if (team == "Williams") {
-                return Brushes.LightCyan;
-            }else {
+            } else if (team == "Williams") {
+                return Brushes.LightBlue;
+            } else {
                 return Brushes.White;
             }
         }

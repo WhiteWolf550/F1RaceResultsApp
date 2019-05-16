@@ -116,21 +116,21 @@ namespace F1 {
             } else if (team == "Ferrari") {
                 return Brushes.Red;
             } else if (team == "Red Bull") {
-                return Brushes.Blue;
+                return Brushes.DarkBlue;
             } else if (team == "Haas F1 Team") {
-                return Brushes.Gold;
+                return Brushes.Black;
             } else if (team == "McLaren") {
                 return Brushes.Orange;
             } else if (team == "Renault") {
                 return Brushes.Yellow;
             } else if (team == "Toro Rosso") {
-                return Brushes.LightBlue;
+                return Brushes.Blue;
             } else if (team == "Racing Point") {
                 return Brushes.HotPink;
             } else if (team == "Alfa Romeo") {
                 return Brushes.DarkRed;
             } else if (team == "Williams") {
-                return Brushes.LightCyan;
+                return Brushes.LightBlue;
             } else {
                 return Brushes.White;
             }
